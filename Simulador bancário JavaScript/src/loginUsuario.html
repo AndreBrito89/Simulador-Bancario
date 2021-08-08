@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/estiloLayout.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../JS/classes.js"></script>
+    <script src="../JS/scriptLoginUsuario.js"></script>
+    <title>Banco XxX - Login de Clientes</title>
+</head>
+
+
+
+<body class="body">
+
+    <section class="container">
+        <header>
+            <figure class="logotipo">
+                <a href="../src/index.html">
+                    <img class="logo-banco" src="../img/logo/bancoXxX Logo.jpg" alt="banner">
+                </a>
+            </figure>
+            <nav class="navtopo-login">
+                <a class="link" href="../src/index.html">Página Inicial</a>
+                <a class="link" href="../src/loginUsuario.html">Login Usuário</a>
+                <a class="link" href="../src/loginGerente.html">Login Gerente</a>
+                <div id="areaLogado" class="areaLogado"></div>
+            </nav>
+        </header>
+        <div id="areaDeLogin" class="areaDeLogin">
+            <br>
+            <h3>Área de Login para Clientes</h3>
+
+            <br>
+            <!--nome-->
+            <div class="form">
+
+                <input type="text" name="loginNome" id="loginNome" required autocomplete="off" />
+                <label for="name" class="label-name">
+                    <span class="content-name">Nome</span>
+                </label>
+            </div>
+            <br>
+            <!--conta-->
+            <div class="form">
+
+                <input type="text" name="loginNome" id="loginNumeroDaConta" required autocomplete="off" />
+                <label for="name" class="label-name">
+                    <span class="content-name">Número da conta</span>
+                </label>
+            </div>
+            <br>
+            <!--senha-->
+            <div class="form">
+
+                <input type="password" name="loginNome" id="loginSenha" required autocomplete="off" />
+                <label for="name" class="label-name">
+                    <span class="content-name">Senha</span>
+                </label>
+            </div>
+
+            <button id="loginSubmmit" class="botaoLoginCliente" onclick="remontaCliente()">Entrar</button>
+
+        </div>
+    </section>
+    <footer class="rodape">Desenvolvido por André de Brito Arnaud&copy;</footer>
+</body>
+
+</html>
